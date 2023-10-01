@@ -1,0 +1,16 @@
+﻿@model Pierwszy.Models.Kalkulator
+@{
+    ViewData["Title"] = "Kalkulator";
+}
+<h1>Kalkulator</h1>
+<form action="Kalkulator">
+    <input type="number" asp-for="A" />Pierwsza liczba
+    <input type="number" asp-for="B" />Druga liczba
+    <input type="submit" value="+" name="operation" />
+    <input type="submit" value="-" name="operation" />
+    <input type="submit" value="*" name="operation" />
+    <input type="submit" value="/" name="operation" />
+</form>
+
+@ViewBag.wynik
+
